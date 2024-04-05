@@ -5,8 +5,8 @@ PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/HiGarfield/cpulimit.git
-PKG_SOURCE_VERSION:=f623359e5e997e9c05777b688a5023b58f295904
-PKG_MIRROR_HASH:=b6422fd376a6f84a945b3ead0dfbc0f127c2e3f00b253781d3476fe9b702ad73
+PKG_SOURCE_VERSION:=63ab8fa8453b0a90dc96dc324e0c3dab6b183c6d
+PKG_MIRROR_HASH:=fdc811d294f43eb066f726885a1cd36843b40d9f327f5c01c8b5d972d652f1c8
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -14,7 +14,7 @@ define Package/cpulimit
   CATEGORY:=Utilities
   TITLE:=cpulimit
   URL:=https://github.com/HiGarfield/cpulimit.git
-  DEPENDS:= +librt
+  DEPENDS:= +librt +libpthread
 endef
 
 MAKE_PATH:=src
